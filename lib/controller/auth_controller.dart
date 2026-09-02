@@ -1,37 +1,4 @@
-// import 'package:flutter/material.dart';
-// import '../Service/FirebaseAuthService.dart';
 
-// class AuthController {
-//   final FirebaseAuthService _authService = FirebaseAuthService();
-
-//   Future<void> handleLogin({
-//     required String email,
-//     required String password,
-//     required BuildContext context,
-//   }) async {
-//     if (email.isEmpty || password.isEmpty) {
-//       ScaffoldMessenger.of(context).showSnackBar(
-//         const SnackBar(content: Text('Please fill all fields')),
-//       );
-//       return;
-//     }
-
-//     try {
-//       await _authService.logIn(email: email, password: password);
-//       if (context.mounted) {
-//         ScaffoldMessenger.of(context).showSnackBar(
-//           const SnackBar(content: Text('Login Successful!')),
-//         );
-//       }
-//     } catch (e) {
-//       if (context.mounted) {
-//         ScaffoldMessenger.of(context).showSnackBar(
-//           SnackBar(content: Text(e.toString())),
-//         );
-//       }
-//     }
-//   }
-// }
 import 'package:flutter/material.dart';
 import '../Service/FirebaseAuthService.dart';
 
